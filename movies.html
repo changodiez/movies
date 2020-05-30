@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="movies.css" />
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <title>Movies</title>
+  </head>
+  <body>
+    <div>
+      <h1>
+        Movies
+      </h1>
+      Type to search a movie:
+      <input type="text" id="myInput" oninput="onSearchType(event)" />
+    </div>
+    <div id="movies">
+      <div class="ppal">
+        <div id="title">This is a test</div>
+      </div>
+      <div id="left">
+        <div id="posterContainer">
+          <p id="plot"></p>
+          <img
+            id="poster"
+            src="https://m.media-amazon.com/images/M/MV5BMjA5NzA5NjMwNl5BMl5BanBnXkFtZTgwNjg2OTk2NzM@._V1_SX300.jpg"
+            alt=""
+          />
+        </div>
+        <!-- <div id="posterContainer"></div> -->
+      </div>
+      <div id="right">
+        <div>
+          Related info:
+          <div>
+            <span id="numberOfRelatedMovies">0</span> related movies found.
+          </div>
+        </div>
+        <div id="relatedInfo"></div>
+      </div>
+    </div>
+    <script src="movies.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
